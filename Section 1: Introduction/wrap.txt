@@ -1,0 +1,82 @@
+*** 1. Curriculum Overview ***
+### Lecture Overview: Building APIs with Python and FastAPI
+
+**Prerequisites:**
+
+* Basic understanding of Python is helpful.
+* Relevant advanced concepts such as type hinting, decorators, and context managers will be introduced as needed.
+
+**Learning Tips:**
+
+* Adjust video playback speed to match your learning pace (recommended not below 1x).
+
+---
+
+### Course Structure and Topics
+
+1. **Fundamentals of APIs and RESTful Design**
+
+   * What APIs are and principles of RESTful API design.
+   * Why FastAPI is a strong choice for building APIs in Python.
+
+2. **FastAPI Basics**
+
+   * Defining endpoints.
+   * Understanding path and query parameters.
+   * Handling different HTTP methods.
+   * Validating request and response data using Pydantic models.
+
+3. **Databases and SQL**
+
+   * Introduction to SQL databases and core SQL concepts.
+   * Understanding tables, columns, rows, and basic SQL queries.
+   * Importance of SQL knowledge even if not writing raw queries directly.
+   * Using Python database models to represent tables.
+   * Managing database connections via FastAPI’s dependency injection.
+
+4. **Asynchronous Programming in Python**
+
+   * Writing async functions and awaiting coroutines.
+
+5. **Project Structure and Code Organization**
+
+   * Organizing related endpoints using FastAPI routers.
+   * Separating Pydantic and database models into maintainable modules and packages.
+   * Separating database interaction logic from endpoint logic into service layers.
+
+6. **User Authentication Flow (OAuth2)**
+
+   * Implementing user signup, email validation, login, password reset, and logout.
+
+7. **Advanced Database Topics**
+
+   * Defining relationships between tables.
+   * Managing database schema changes over time using Alembic.
+
+8. **Notifications**
+
+   * Sending emails or SMS notifications for events such as account verification, shipment updates, and user feedback.
+
+9. **Custom Responses**
+
+   * Returning JSON data.
+   * Rendering HTML pages using Jinja2 templates directly from the API.
+
+10. **Advanced API Concepts**
+
+    * Error handling.
+    * Creating API middlewares.
+    * Improving API documentation.
+    * Writing endpoint tests using Pytest.
+    * Running background tasks efficiently with Celery.
+
+11. **Deployment**
+
+    * Packaging and running the API using Docker and Docker Compose.
+
+12. **Bonus Topics**
+
+    * Auto-generating client-side code from API specifications.
+    * Building a simple React frontend to interact with the backend API.
+
+---
