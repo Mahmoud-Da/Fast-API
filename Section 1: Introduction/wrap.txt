@@ -165,3 +165,62 @@
 * RESTful APIs follow these principles to ensure consistent and predictable interactions.
 
 ---
+
+
+
+*** 3. What is FastAPI?  ***
+---
+
+### Introduction to FastAPI
+
+**What is FastAPI?**
+
+* A modern, high-performance web framework for building APIs in Python.
+* Developed by Sebastian Ramirez.
+* Gaining popularity rapidly due to its speed and ease of use.
+
+---
+
+### Building APIs with FastAPI
+
+1. **Creating an Endpoint:**
+
+   * Start with a basic Python function.
+   * Use a decorator to specify the HTTP method (e.g., GET, POST) and the request path (endpoint).
+   * The function returns data, which FastAPI sends as the API response.
+
+2. **Running the API Server:**
+
+   * Once endpoints are defined, run the FastAPI server to accept requests and send responses.
+
+3. **Decorator Syntax:**
+
+   * Decorators link functions to specific API routes and methods.
+   * May seem unfamiliar initially, but understanding them is essential for defining endpoints.
+
+examples:
+app3.py
+
+---
+
+### Key Features of FastAPI
+
+* **Data Validation:** Automatically validate request and response data using Pydantic models.
+* **Automatic API Documentation:** Generates interactive API docs based on OpenAPI standards.
+* **Dependency Injection:** Manage components like database connections cleanly.
+* **Asynchronous Programming:** Supports async functions for efficient handling of many concurrent requests.
+
+---
+
+### Underlying Technologies
+
+* **Starlette:** Handles the web server functionality.
+* **Pydantic:** Manages data parsing and validation.
+
+---
+
+### Summary
+
+FastAPI is a modern, fast, and easy-to-use Python framework designed to build scalable and well-structured APIs efficiently.
+
+---
