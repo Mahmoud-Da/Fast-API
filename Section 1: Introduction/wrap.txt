@@ -80,3 +80,88 @@
     * Building a simple React frontend to interact with the backend API.
 
 ---
+
+
+*** 2. What are REST APIs? ***
+
+### Understanding APIs and RESTful APIs
+
+**What is an API?**
+
+* API (Application Programming Interface) enables communication between a client and a server.
+* Example: Checking shipment status on a website by entering a tracking ID.
+* APIs allow programs to request data from servers directly using code, without a user interface.
+
+**REST (Representational State Transfer):**
+
+* A popular approach for designing APIs.
+* Provides guidelines and rules on how APIs should be designed and behave.
+
+---
+
+### Key Concepts of RESTful APIs
+
+1. **Endpoints (URI):**
+
+   * Specific addresses on the server where requests are sent.
+   * Example: `/shipment` endpoint for shipment status.
+
+2. **Client and Server:**
+
+   * Client: The program sending the API request.
+   * Server: The machine receiving, processing the request, and sending the response.
+
+3. **HTTP Methods:**
+
+   * Common methods:
+
+     * `GET`: Read data.
+     * `POST`: Create new data.
+     * `PUT`: Update existing data.
+     * `DELETE`: Remove data.
+   * The method indicates the action the client wants to perform on the resource.
+
+4. **Request Components:**
+
+   * **Headers:** Metadata such as data format or authentication info (key-value pairs).
+   * **Body:** Data sent to the server, often in JSON format (key-value pairs).
+
+     * Example: Sending a tracking ID in the request body to get shipment details.
+
+---
+
+### API Response
+
+1. **Status Codes:**
+
+   * Indicate the result of the request.
+   * Examples:
+
+     * `200 OK`: Successful request.
+     * `400 Bad Request`: Client sent invalid data.
+     * `404 Not Found`: Requested endpoint does not exist.
+     * `500 Internal Server Error`: Server encountered an error.
+   * Status code ranges:
+
+     * 200s: Success
+     * 300s: Redirection
+     * 400s: Client errors
+     * 500s: Server errors
+
+2. **Response Components:**
+
+   * **Headers:** Information about the server or data format.
+   * **Body:** The actual data requested, usually in JSON format.
+
+     * Example: Shipment status details.
+
+---
+
+### Summary
+
+* APIs enable programmatic communication between client and server.
+* REST is a standard for designing APIs with defined endpoints, HTTP methods, and structured requests and responses.
+* Clients send requests with methods, headers, and bodies; servers respond with status codes, headers, and data.
+* RESTful APIs follow these principles to ensure consistent and predictable interactions.
+
+---
